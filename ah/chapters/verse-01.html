@@ -1,1 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Āyuṣkāmīyam - Verse 1</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#f7f4ef;
+font-family:'Noto Serif',serif;
+color:#222;
+}
+
+.header{
+background:#7a001f;
+color:#f6ead0;
+padding:18px;
+text-align:center;
+}
+
+.header h1{
+margin:0;
+font-size:34px;
+}
+
+.breadcrumb{
+width:90%;
+margin:15px auto;
+font-size:14px;
+}
+
+.breadcrumb a{
+text-decoration:none;
+color:#8b0000;
+font-weight:600;
+}
+
+.container{
+width:92%;
+margin:auto;
+display:grid;
+grid-template-columns:60% 40%;
+gap:20px;
+margin-bottom:40px;
+}
+
+.left-panel,
+.right-panel{
+background:white;
+border:2px solid #d2b98b;
+border-radius:15px;
+padding:20px;
+}
+
+.chapter-title{
+text-align:center;
+}
+
+.chapter-title h2{
+font-size:28px;
+color:#8b0000;
+margin-bottom:5px;
+}
+
+.chapter-title p{
+font-size:16px;
+font-style:italic;
+color:#666;
+margin-top:0;
+}
+
+.verse{
+font-size:20px;
+line-height:1.9;
+text-align:center;
+margin-top:20px;
+}
+
+.transliteration{
+font-size:14px;
+line-height:1.8;
+text-align:center;
+margin-top:15px;
+font-style:italic;
+color:#666;
+}
+
+details{
+margin-top:12px;
+border:1px solid #d2b98b;
+border-radius:10px;
+padding:12px;
+background:white;
+}
+
+summary{
+cursor:pointer;
+font-size:16px;
+font-weight:600;
+color:#8b0000;
+}
+
+.word{
+display:inline-block;
+padding:6px 10px;
+margin:4px;
+border:1px solid #d2b98b;
+border-radius:6px;
+cursor:pointer;
+}
+
+.word:hover{
+background:#f5ecdf;
+}
+
+.inspector{
+border:1px solid #d2b98b;
+border-radius:10px;
+padding:15px;
+background:#fafafa;
+margin-bottom:20px;
+}
+
+.inspector h3{
+margin-top:0;
+color:#8b0000;
+}
+
+.row{
+padding:6px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+.mode{
+margin-bottom:15px;
+font-size:14px;
+}
+
+.commentary-box{
+border:1px solid #d2b98b;
+border-radius:10px;
+padding:15px;
+background:#fafafa;
+margin-bottom:15px;
+font-size:14px;
+line-height:1.8;
+max-height:350px;
+overflow:auto;
+}
+
+.commentary-box h3{
+margin-top:0;
+color:#8b0000;
+}
+
+.note{
+font-size:13px;
+color:#666;
+font-style:italic;
+}
+
+@media(max-width:900px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.verse{
+font-size:18px;
+}
+
+}
+
+</style>
+
+<script>
+
+function showGrammar(word){
+
+const grammar = {
+
+"रागादि-रोगान्":`
+<div class="row"><b>पदम्</b> : रागादि-रोगान्</div>
+<div class="row"><b>प्रातिपदिकम्</b> : रागादि-रोग</div>
+<div class="row"><b>समासः</b> : द्वन्द्वसमासः</div>
+<div class="row"><b>विभक्तिः</b> : द्वितीया</div>
+<div class="row"><b>वचनम्</b> : बहुवचनम्</div>
+<div class="row"><b>लिङ्गम्</b> : पुल्लिङ्गम्</div>
+<div class="row"><b>कारकम्</b> : कर्म</div>
+<div class="row"><b>Meaning</b> : Passions and diseases</div>
+`,
+
+"जघान":`
+<div class="row"><b>पदम्</b> : जघान</div>
+<div class="row"><b>धातुः</b> : हन्</div>
+<div class="row"><b>लकारः</b> : लिट्</div>
+<div class="row"><b>पुरुषः</b> : प्रथमपुरुषः</div>
+<div class="row"><b>वचनम्</b> : एकवचनम्</div>
+<div class="row"><b>Meaning</b> : Destroyed</div>
+`,
+
+"अपूर्व-वैद्याय":`
+<div class="row"><b>पदम्</b> : अपूर्ववैद्याय</div>
+<div class="row"><b>प्रातिपदिकम्</b> : अपूर्ववैद्य</div>
+<div class="row"><b>समासः</b> : कर्मधारयः</div>
+<div class="row"><b>विभक्तिः</b> : चतुर्थी</div>
+<div class="row"><b>वचनम्</b> : एकवचनम्</div>
+<div class="row"><b>लिङ्गम्</b> : पुल्लिङ्गम्</div>
+<div class="row"><b>Meaning</b> : To the unparalleled physician</div>
+`
+};
+
+document.getElementById("grammarData").innerHTML =
+grammar[word] || "<p>Grammar data coming soon.</p>";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>अष्टाङ्गहृदयम्</h1>
+</div>
+
+<div class="breadcrumb">
+<a href="../../index.html">Home</a> →
+<a href="../index.html">अष्टाङ्गहृदयम्</a> →
+<a href="../sutrasthana.html">सूत्रस्थानम्</a> →
+<a href="ah-su-01.html">१. आयुष्कामीयम्</a> →
+श्लोक १
+</div>
+
+<div class="container">
+
+<div class="left-panel">
+
+<div class="chapter-title">
+<h2>१. आयुष्कामीयम्</h2>
+<p>Verse 1</p>
+</div>
+
+<div class="verse">
+रागादिरोगान् सततानुषक्तानशेषकायप्रसृतानशेषान् ।<br>
+औत्सुक्यमोहारतिदान् जघान योऽपूर्ववैद्याय नमोऽस्तु तस्मै ॥१॥
+</div>
+
+<div class="transliteration">
+rāgādirogān satatānuṣaktānaśeṣakāya-prasṛtānaśeṣān ।
+autsukya-mohāratidān jaghāna yo’pūrvavaidyāya namo’stu tasmai ॥
+</div>
+
+<details open>
+<summary>छन्दः (Metre Analysis)</summary>
+<p>वृत्तम् : उपजातिः</p>
+<p class="note">Audio will be added later.</p>
+</details>
+
+<details open>
+<summary>पदच्छेदः (Word Segmentation)</summary>
+
+<span class="word" onclick="showGrammar('रागादि-रोगान्')">रागादि-रोगान्</span>
+<span class="word">सतत-अनुषक्तान्</span>
+<span class="word">अशेष-काय-प्रसृतान्</span>
+<span class="word">अशेषान्</span>
+<span class="word">औत्सुक्य-मोह-अरति-दान्</span>
+<span class="word" onclick="showGrammar('जघान')">जघान</span>
+<span class="word">यः</span>
+<span class="word" onclick="showGrammar('अपूर्व-वैद्याय')">अपूर्व-वैद्याय</span>
+<span class="word">नमः</span>
+<span class="word">अस्तु</span>
+<span class="word">तस्मै</span>
+
+</details>
+
+<details>
+<summary>अन्वयः (Prose Order)</summary>
+
+<p>
+यः अपूर्ववैद्यः रागादिरोगान् सततानुषक्तान् अशेषकायप्रसृतान् अशेषान् औत्सुक्यमोहारतिदान् जघान, तस्मै नमः अस्तु।
+</p>
+
+</details>
+
+<details>
+<summary>अर्थः (Meaning)</summary>
+
+<p>
+Salutations to that unparalleled physician who destroyed the afflictions beginning with attachment, which remain constantly associated with living beings, pervade embodied existence, and give rise to anxiety, delusion, and dissatisfaction.
+</p>
+
+</details>
+
+<details>
+<summary>रोगसंज्ञा-साम्यानिर्देशः (WHO / ICD Mapping)</summary>
+
+<table>
+<tr><td><b>राग</b></td><td>Attachment / Craving</td></tr>
+<tr><td><b>मोह</b></td><td>Cognitive Delusion</td></tr>
+<tr><td><b>अरति</b></td><td>Dissatisfaction</td></tr>
+<tr><td><b>औत्सुक्य</b></td><td>Anxiety / Restlessness</td></tr>
+</table>
+
+<p class="note">
+Conceptual mappings only. Not exact clinical equivalence.
+</p>
+
+</details>
+
+</div>
+
+<div class="right-panel">
+
+<div class="inspector">
+
+<h3>पदविश्लेषणम् (Word Analysis)</h3>
+
+<div id="grammarData">
+<p>Click a word in पदच्छेदः.</p>
+</div>
+
+</div>
+
+<div class="mode">
+<input type="radio" checked> सम्पूर्णव्याख्या
+&nbsp;&nbsp;
+<input type="radio"> पदविशेषव्याख्या
+</div>
+
+<div class="commentary-box">
+<h3>सर्वाङ्गसुन्दरा</h3>
+
+<p>
+Paste Sarvāṅgasundarā commentary here.
+</p>
+
+</div>
+
+<div class="commentary-box">
+<h3>आयुर्वेदरसायनम्</h3>
+
+<p>
+Paste Āyurveda Rasāyana commentary here.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
