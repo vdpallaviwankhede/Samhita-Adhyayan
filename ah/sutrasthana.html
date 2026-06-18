@@ -1,3 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sūtrasthānam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#f7f4ef;
+font-family:'Noto Serif', serif;
+}
+
+.header-box{
+width:85%;
+margin:30px auto;
+background:#7a001f;
+border:5px solid #d2b98b;
+border-radius:30px;
+text-align:center;
+padding:35px 20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header-box h1{
+margin:0;
+font-size:64px;
+color:#f6ead0;
+}
+
+.header-box p{
+margin-top:15px;
+font-size:20px;
+font-style:italic;
+color:#f6ead0;
+}
+
+.subtitle{
+text-align:center;
+font-size:52px;
+color:#8b0000;
+margin-top:60px;
+margin-bottom:40px;
+}
+
+.chapter-grid{
+width:95%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+padding-bottom:50px;
+}
+
+.chapter-card{
+background:white;
+border:3px solid #d2b98b;
+border-radius:20px;
+padding:35px;
+text-align:center;
+cursor:pointer;
+transition:0.3s;
+}
+
+.chapter-card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.chapter-card h3{
+font-size:30px;
+color:#8b0000;
+margin-bottom:15px;
+}
+
+.chapter-card p{
+font-size:20px;
+font-style:italic;
+color:#666;
+}
+
+@media(max-width:900px){
+
+.chapter-grid{
+grid-template-columns:1fr;
+}
+
+.header-box h1{
+font-size:42px;
+}
+
+.subtitle{
+font-size:34px;
+}
+
+}
+
+function comingSoon(){
+alert("Coming Soon");
+}
+
+</style>
+
+<script>
+function comingSoon(){
+alert("Coming Soon");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header-box">
+<h1>अष्टाङ्गहृदयम्</h1>
+<p>Aṣṭāṅga-Hṛdayam</p>
+</div>
+
+<div class="subtitle">
+सूत्रस्थानम्
+</div>
+
 <div class="chapter-grid">
 
 <div class="chapter-card"
@@ -31,124 +160,7 @@ onclick="window.location.href='chapters/ah-su-01.html'">
 <p>Annasvarūpavijñānīyam</p>
 </div>
 
-<div class="chapter-card" onclick="comingSoon()">
-<h3>७. अन्नरक्षाविधिः</h3>
-<p>Annarakṣāvidhiḥ</p>
 </div>
 
-<div class="chapter-card" onclick="comingSoon()">
-<h3>८. मात्राशितीयम्</h3>
-<p>Mātrāśitīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>९. द्रव्यादिविज्ञानीयम्</h3>
-<p>Dravyādivijñānīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१०. रसभेदीयम्</h3>
-<p>Rasabhedīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>११. दोषादिविज्ञानीयम्</h3>
-<p>Doṣādivijñānīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१२. दोषभेदीयम्</h3>
-<p>Doṣabhedīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१३. दोषोपक्रमणीयम्</h3>
-<p>Doṣopakramaṇīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१४. द्विविधोपक्रमणीयम्</h3>
-<p>Dvividhopakramaṇīyam</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१५. शोधनादिगणसंग्रहः</h3>
-<p>Śodhanādigaṇasaṅgrahaḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१६. स्नेहविधिः</h3>
-<p>Snehavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१७. स्वेदविधिः</h3>
-<p>Svedavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१८. वमनविरेचनविधिः</h3>
-<p>Vamanavirecanavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>१९. बस्तिविधिः</h3>
-<p>Bastividhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२०. नस्यविधिः</h3>
-<p>Nasyavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२१. धूमपानविधिः</h3>
-<p>Dhūmapānavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२२. गण्डूषादिविधिः</h3>
-<p>Gaṇḍūṣādividhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२३. आश्चोतनाञ्जनविधिः</h3>
-<p>Āścotanāñjanavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२४. तर्पणपुटपाकविधिः</h3>
-<p>Tarpaṇapuṭapākavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२५. यन्त्रविधिः</h3>
-<p>Yantravidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२६. शस्त्रविधिः</h3>
-<p>Śastravidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२७. सिराव्यधविधिः</h3>
-<p>Sirāvyadhavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२८. शल्याहरणविधिः</h3>
-<p>Śalyāharaṇavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>२९. शस्त्रकर्मविधिः</h3>
-<p>Śastrakarmavidhiḥ</p>
-</div>
-
-<div class="chapter-card" onclick="comingSoon()">
-<h3>३०. क्षाराग्निकर्मविधिः</h3>
-<p>Kṣārāgnikarmavidhiḥ</p>
-</div>
-
-</div>
+</body>
+</html>
