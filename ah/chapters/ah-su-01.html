@@ -42,9 +42,22 @@ font-style:italic;
 color:#f6ead0;
 }
 
+.breadcrumb{
+width:85%;
+margin:20px auto;
+font-size:18px;
+color:#666;
+}
+
+.breadcrumb a{
+text-decoration:none;
+color:#8b0000;
+font-weight:600;
+}
+
 .chapter-title{
 text-align:center;
-margin-top:50px;
+margin-top:40px;
 }
 
 .chapter-title h2{
@@ -59,49 +72,36 @@ font-style:italic;
 color:#666;
 }
 
-.verse-box{
+.verse-container{
 width:85%;
-margin:50px auto;
+margin:40px auto;
 background:white;
 border:3px solid #d2b98b;
 border-radius:20px;
-padding:40px;
+padding:25px;
 box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.verse-number{
-font-size:28px;
-font-weight:bold;
-color:#8b0000;
-margin-bottom:20px;
+.verse-card{
+padding:25px;
+border-bottom:1px solid #e0d3b2;
+cursor:pointer;
+transition:0.3s;
+}
+
+.verse-card:last-child{
+border-bottom:none;
+}
+
+.verse-card:hover{
+background:#faf7f2;
 }
 
 .verse{
-font-size:34px;
+font-size:22px;
 line-height:2;
 text-align:center;
-}
-
-.translation{
-margin-top:30px;
-font-size:22px;
-font-style:italic;
-color:#555;
-text-align:center;
-}
-
-.navigation{
-text-align:center;
-margin:50px;
-}
-
-.navigation a{
-text-decoration:none;
-background:#7a001f;
-color:white;
-padding:15px 30px;
-border-radius:10px;
-font-size:18px;
+color:#222;
 }
 
 @media(max-width:900px){
@@ -115,7 +115,7 @@ font-size:34px;
 }
 
 .verse{
-font-size:24px;
+font-size:18px;
 }
 
 }
@@ -131,30 +131,64 @@ font-size:24px;
 <p>Aṣṭāṅga-Hṛdayam</p>
 </div>
 
+<div class="breadcrumb">
+<a href="../../index.html">🏠 Ayurveda Mahodadhi</a>
+›
+<a href="../index.html">अष्टाङ्गहृदयम्</a>
+›
+<a href="../sutrasthana.html">सूत्रस्थानम्</a>
+›
+१. आयुष्कामीयम्
+</div>
+
 <div class="chapter-title">
 <h2>१. आयुष्कामीयम्</h2>
 <p>Āyuṣkāmīyam</p>
 </div>
 
-<div class="verse-box">
+<div class="verse-container">
 
-<div class="verse-number">
-श्लोक १
-</div>
-
+<div class="verse-card">
 <div class="verse">
-रागादिरोगान् सततानुषक्तान्<br>
-अशेषकायप्रसृतानशेषान् ।
+रागादिरोगान् सततानुषक्तानशेषकायप्रसृतानशेषान् ।<br>
+औत्सुक्यमोहारतिदान् जघान योऽपूर्ववैद्याय नमोऽस्तु तस्मै ॥१॥
+</div>
 </div>
 
-<div class="translation">
-Verse text placeholder
+<div class="verse-card">
+<div class="verse">
+आयुःकामायमानेन धर्मार्थसुखसाधनम् ।<br>
+आयुर्वेदोपदेशेषु विधेयः परमादरः ॥२॥
+</div>
 </div>
 
+<div class="verse-card">
+<div class="verse">
+ब्रह्मा स्मृत्वाऽऽयुषो वेदं प्रजापतिमजिग्रहत् ।<br>
+सोऽश्विनौ तौ सहस्राक्षं सोऽत्रिपुत्रादिकान्मुनीन् ॥३॥
+</div>
 </div>
 
-<div class="navigation">
-<a href="../sutrasthana.html">← Back to Sūtrasthānam</a>
+<div class="verse-card">
+<div class="verse">
+तेऽग्निवेशादिकांस्ते तु पृथक्तन्त्राणि तेनिरे ।<br>
+तेभ्योऽतिविप्रकीर्णेभ्यः प्रायः सारतरोच्चयः ॥४॥
+</div>
+</div>
+
+<div class="verse-card">
+<div class="verse">
+क्रियतेऽष्टाङ्गहृदयं नातिसंक्षेपविस्तरम् ।<br>
+कायबालग्रहोर्ध्वाङ्गशल्यदंष्ट्राजरावृषान् ॥५॥
+</div>
+</div>
+
+<div class="verse-card">
+<div class="verse">
+अष्टावङ्गानि तस्याहुश्चिकित्सा येषु संश्रिता ॥६॥
+</div>
+</div>
+
 </div>
 
 </body>
