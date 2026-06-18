@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aṣṭāṅga-Hṛdayam</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#f7f4ef;
+font-family:'Noto Serif', serif;
+}
+
+.header-box{
+width:85%;
+margin:30px auto;
+background:#7a001f;
+border:5px solid #d2b98b;
+border-radius:30px;
+text-align:center;
+padding:35px 20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.header-box h1{
+margin:0;
+font-size:64px;
+color:#f6ead0;
+}
+
+.header-box p{
+margin-top:15px;
+font-size:20px;
+font-style:italic;
+color:#f6ead0;
+}
+
+.subtitle{
+text-align:center;
+font-size:52px;
+color:#8b0000;
+margin-top:60px;
+margin-bottom:40px;
+}
+
+.grid{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:white;
+border:3px solid #d2b98b;
+border-radius:20px;
+padding:40px;
+text-align:center;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card h2{
+color:#8b0000;
+font-size:38px;
+margin-bottom:20px;
+}
+
+.card p{
+font-size:22px;
+font-style:italic;
+color:#666;
+}
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.header-box h1{
+font-size:42px;
+}
+
+.subtitle{
+font-size:34px;
+}
+
+}
+
+</style>
+
+<script>
+
+function comingSoon(){
+alert("Coming Soon");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header-box">
+<h1>अष्टाङ्गहृदयम्</h1>
+<p>Aṣṭāṅga-Hṛdayam</p>
+</div>
+
+<div class="subtitle">
+स्थानानि
+</div>
+
+<div class="grid">
+
+<div class="card"
+onclick="window.location.href='sutrasthana.html'">
+<h2>सूत्रस्थानम्</h2>
+<p>Sūtrasthānam</p>
+</div>
+
+<div class="card"
+onclick="comingSoon()">
+<h2>शरीरस्थानम्</h2>
+<p>Śārīrasthānam</p>
+</div>
+
+<div class="card"
+onclick="comingSoon()">
+<h2>निदानस्थानम्</h2>
+<p>Nidānasthānam</p>
+</div>
+
+<div class="card"
+onclick="comingSoon()">
+<h2>चिकित्सास्थानम्</h2>
+<p>Cikitsāsthānam</p>
+</div>
+
+<div class="card"
+onclick="comingSoon()">
+<h2>कल्पस्थानम्</h2>
+<p>Kalpasthānam</p>
+</div>
+
+<div class="card"
+onclick="comingSoon()">
+<h2>उत्तरस्थानम्</h2>
+<p>Uttarasthānam</p>
+</div>
+
+</div>
+
+</body>
+</html>
 
