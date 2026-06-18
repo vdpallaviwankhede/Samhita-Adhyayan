@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Āyuṣkāmīyam</title>
+<title>Āyuṣkāmīyam - Śloka 1</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -15,38 +15,26 @@ body{
 margin:0;
 padding:0;
 background:#f7f4ef;
-font-family:'Noto Serif', serif;
+font-family:'Noto Serif',serif;
+color:#222;
 }
 
-.header-box{
-width:85%;
-margin:30px auto;
+.header{
 background:#7a001f;
-border:5px solid #d2b98b;
-border-radius:30px;
+color:#f6ead0;
+padding:20px;
 text-align:center;
-padding:35px 20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-.header-box h1{
+.header h1{
 margin:0;
-font-size:64px;
-color:#f6ead0;
-}
-
-.header-box p{
-margin-top:15px;
-font-size:20px;
-font-style:italic;
-color:#f6ead0;
+font-size:40px;
 }
 
 .breadcrumb{
-width:85%;
+width:90%;
 margin:20px auto;
-font-size:18px;
-color:#666;
+font-size:16px;
 }
 
 .breadcrumb a{
@@ -55,138 +43,279 @@ color:#8b0000;
 font-weight:600;
 }
 
+.container{
+width:90%;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+}
+
+.main{
+background:white;
+border:2px solid #d2b98b;
+border-radius:15px;
+padding:25px;
+}
+
+.sidebar{
+background:white;
+border:2px solid #d2b98b;
+border-radius:15px;
+padding:20px;
+position:sticky;
+top:20px;
+height:fit-content;
+}
+
 .chapter-title{
 text-align:center;
-margin-top:40px;
+margin-bottom:20px;
 }
 
 .chapter-title h2{
-font-size:48px;
 color:#8b0000;
+font-size:42px;
 margin-bottom:10px;
 }
 
 .chapter-title p{
-font-size:24px;
+font-size:22px;
 font-style:italic;
 color:#666;
 }
 
-.verse-container{
-width:85%;
-margin:40px auto;
-background:white;
-border:3px solid #d2b98b;
-border-radius:20px;
-padding:25px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-.verse-card{
-padding:25px;
-border-bottom:1px solid #e0d3b2;
-cursor:pointer;
-transition:0.3s;
-}
-
-.verse-card:last-child{
-border-bottom:none;
-}
-
-.verse-card:hover{
-background:#faf7f2;
-}
-
 .verse{
-font-size:22px;
-line-height:2;
 text-align:center;
-color:#222;
+font-size:34px;
+line-height:2;
+margin-top:30px;
+}
+
+.transliteration{
+text-align:center;
+font-size:22px;
+font-style:italic;
+color:#666;
+margin-top:20px;
+}
+
+details{
+margin-top:15px;
+border:1px solid #d2b98b;
+border-radius:10px;
+padding:15px;
+background:white;
+}
+
+summary{
+cursor:pointer;
+font-weight:bold;
+font-size:20px;
+color:#8b0000;
+}
+
+.commentary-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:15px;
+}
+
+.commentary-box{
+border:1px solid #d2b98b;
+border-radius:10px;
+padding:15px;
+background:#fafafa;
+}
+
+.commentary-box h3{
+margin-top:0;
+color:#8b0000;
+}
+
+.grammar-title{
+font-size:24px;
+font-weight:bold;
+color:#8b0000;
+margin-bottom:15px;
+}
+
+.grammar-row{
+padding:8px 0;
+border-bottom:1px solid #eee;
+}
+
+.word-buttons{
+margin-top:20px;
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.word-buttons button{
+padding:8px 12px;
+border:1px solid #d2b98b;
+background:white;
+cursor:pointer;
+border-radius:6px;
+}
+
+.word-buttons button:hover{
+background:#f5e9d6;
 }
 
 @media(max-width:900px){
 
-.header-box h1{
-font-size:42px;
+.container{
+grid-template-columns:1fr;
 }
 
-.chapter-title h2{
-font-size:34px;
+.sidebar{
+position:relative;
+}
+
+.commentary-grid{
+grid-template-columns:1fr;
 }
 
 .verse{
-font-size:18px;
+font-size:24px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div class="header-box">
+<div class="header">
 <h1>अष्टाङ्गहृदयम्</h1>
-<p>Aṣṭāṅga-Hṛdayam</p>
 </div>
 
 <div class="breadcrumb">
-<a href="../../index.html">🏠 Ayurveda Mahodadhi</a>
-›
-<a href="../index.html">अष्टाङ्गहृदयम्</a>
-›
-<a href="../sutrasthana.html">सूत्रस्थानम्</a>
-›
-१. आयुष्कामीयम्
+<a href="../../index.html">Home</a> →
+<a href="../index.html">अष्टाङ्गहृदयम्</a> →
+<a href="../sutrasthana.html">सूत्रस्थानम्</a> →
+१. आयुष्कामीयम् →
+श्लोक १
 </div>
+
+<div class="container">
+
+<div class="main">
 
 <div class="chapter-title">
 <h2>१. आयुष्कामीयम्</h2>
 <p>Āyuṣkāmīyam</p>
 </div>
 
-<div class="verse-container">
-
-<div class="verse-card">
 <div class="verse">
 रागादिरोगान् सततानुषक्तानशेषकायप्रसृतानशेषान् ।<br>
 औत्सुक्यमोहारतिदान् जघान योऽपूर्ववैद्याय नमोऽस्तु तस्मै ॥१॥
 </div>
+
+<div class="transliteration">
+rāgādirogān satatānuṣaktānaśeṣakāya-prasṛtānaśeṣān ।<br>
+autsukya-mohāratidān jaghāna yo’pūrvavaidāya namo'stu tasmai ॥
 </div>
 
-<div class="verse-card">
-<div class="verse">
-आयुःकामायमानेन धर्मार्थसुखसाधनम् ।<br>
-आयुर्वेदोपदेशेषु विधेयः परमादरः ॥२॥
-</div>
+<details open>
+<summary>छन्दः (Metre Audio)</summary>
+<p>वृत्तम् : उपजाति</p>
+<p>Audio will be added later.</p>
+</details>
+
+<details>
+<summary>पदच्छेदः (Padaccheda)</summary>
+
+<div class="word-buttons">
+
+<button>रागादि-रोगान्</button>
+<button>सततानुषक्तान्</button>
+<button>अशेषकाय-प्रसृतान्</button>
+<button>अशेषान्</button>
+<button>औत्सुक्य-मोहारति-दान्</button>
+<button>जघान</button>
+<button>यः</button>
+<button>अपूर्ववैद्याय</button>
+<button>नमः</button>
+<button>अस्तु</button>
+<button>तस्मै</button>
+
 </div>
 
-<div class="verse-card">
-<div class="verse">
-ब्रह्मा स्मृत्वाऽऽयुषो वेदं प्रजापतिमजिग्रहत् ।<br>
-सोऽश्विनौ तौ सहस्राक्षं सोऽत्रिपुत्रादिकान्मुनीन् ॥३॥
-</div>
+</details>
+
+<details>
+<summary>अन्वयः (Anvaya)</summary>
+
+<p>
+यः अपूर्ववैद्यः रागादिरोगान् सततानुषक्तान् अशेषकायप्रसृतान् अशेषान् औत्सुक्यमोहारतिदान् जघान, तस्मै नमः अस्तु।
+</p>
+
+</details>
+
+<details>
+<summary>अर्थः (Meaning)</summary>
+
+<p>
+Meaning section will be added later.
+</p>
+
+</details>
+
+<details>
+<summary>रोगसंज्ञा-साम्यानिर्देशः (WHO / ICD Mapping)</summary>
+
+<p>
+Mapping section will be added later.
+</p>
+
+</details>
+
+<details open>
+<summary>व्याख्याने (Commentaries)</summary>
+
+<div class="commentary-grid">
+
+<div class="commentary-box">
+<h3>सर्वाङ्गसुन्दरा</h3>
+<p>
+Paste Sarvāṅgasundarā commentary here.
+</p>
 </div>
 
-<div class="verse-card">
-<div class="verse">
-तेऽग्निवेशादिकांस्ते तु पृथक्तन्त्राणि तेनिरे ।<br>
-तेभ्योऽतिविप्रकीर्णेभ्यः प्रायः सारतरोच्चयः ॥४॥
-</div>
-</div>
-
-<div class="verse-card">
-<div class="verse">
-क्रियतेऽष्टाङ्गहृदयं नातिसंक्षेपविस्तरम् ।<br>
-कायबालग्रहोर्ध्वाङ्गशल्यदंष्ट्राजरावृषान् ॥५॥
-</div>
+<div class="commentary-box">
+<h3>आयुर्वेदरसायनम्</h3>
+<p>
+Paste Hemādri commentary here.
+</p>
 </div>
 
-<div class="verse-card">
-<div class="verse">
-अष्टावङ्गानि तस्याहुश्चिकित्सा येषु संश्रिता ॥६॥
 </div>
+
+</details>
+
+</div>
+
+<div class="sidebar">
+
+<div class="grammar-title">
+पदविश्लेषणम्
+</div>
+
+<div class="grammar-row"><b>पदम्</b> : रागादि-रोगान्</div>
+<div class="grammar-row"><b>प्रातिपदिकम्</b> : रागादि-रोग</div>
+<div class="grammar-row"><b>मूलधातुः</b> : —</div>
+<div class="grammar-row"><b>प्रत्ययः</b> : —</div>
+<div class="grammar-row"><b>समासः</b> : बहुव्रीहिः</div>
+<div class="grammar-row"><b>विभक्तिः</b> : द्वितीया</div>
+<div class="grammar-row"><b>वचनम्</b> : बहुवचनम्</div>
+<div class="grammar-row"><b>लिङ्गम्</b> : पुल्लिङ्गम्</div>
+<div class="grammar-row"><b>कारकम्</b> : कर्म</div>
+
 </div>
 
 </div>
