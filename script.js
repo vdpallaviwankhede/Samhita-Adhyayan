@@ -15,6 +15,6 @@ alert("Suśruta-Saṃhitā section coming soon");
 document.getElementById("ashtanga-card")
 .addEventListener("click", function(){
 
-alert("Aṣṭāṅga-Hṛdayam section coming soon");
+window.location.href = "ah/sutrasthana.html";
 
 });
