@@ -1,16 +1,26 @@
-```javascript
-const cards = document.querySelectorAll(".card");
+document.getElementById("charaka-card")
+.addEventListener("click", function(){
 
-cards[0].addEventListener("click", () => {
-    alert("Caraka Saṃhitā coming soon");
-});
-
-cards[1].addEventListener("click", () => {
-    alert("Suśruta Saṃhitā coming soon");
-});
-
-cards[2].addEventListener("click", () => {
-    alert("Aṣṭāṅga Hṛdayam coming soon");
-});
+```
+alert("Caraka Saṃhitā section coming soon");
 ```
 
+});
+
+document.getElementById("sushruta-card")
+.addEventListener("click", function(){
+
+```
+alert("Suśruta Saṃhitā section coming soon");
+```
+
+});
+
+document.getElementById("ashtanga-card")
+.addEventListener("click", function(){
+
+```
+alert("Aṣṭāṅga Hṛdayam section coming soon");
+```
+
+});
