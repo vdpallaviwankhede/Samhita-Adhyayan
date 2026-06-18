@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Āyuṣkāmīyam - Śloka 1</title>
+
+<title>Āyuṣkāmīyam</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -12,6 +13,7 @@
 
 body{
 margin:0;
+padding:0;
 background:#f7f4ef;
 font-family:'Noto Serif',serif;
 color:#222;
@@ -20,19 +22,19 @@ color:#222;
 .header{
 background:#7a001f;
 color:#f6ead0;
-padding:18px;
+padding:20px;
 text-align:center;
 }
 
 .header h1{
 margin:0;
-font-size:32px;
+font-size:42px;
 }
 
 .breadcrumb{
 width:90%;
-margin:15px auto;
-font-size:14px;
+margin:20px auto;
+font-size:16px;
 }
 
 .breadcrumb a{
@@ -41,200 +43,79 @@ color:#8b0000;
 font-weight:600;
 }
 
-.container{
-width:92%;
-margin:auto;
-display:grid;
-grid-template-columns:40% 60%;
-gap:20px;
-}
-
-.left-panel,
-.right-panel{
-background:white;
-border:2px solid #d2b98b;
-border-radius:15px;
-padding:20px;
-}
-
 .chapter-title{
 text-align:center;
+margin-top:40px;
 }
 
 .chapter-title h2{
-font-size:28px;
+font-size:40px;
 color:#8b0000;
-margin-bottom:5px;
+margin-bottom:8px;
 }
 
 .chapter-title p{
-font-size:16px;
-color:#666;
-font-style:italic;
-}
-
-.verse{
-font-size:24px;
-line-height:1.9;
-text-align:center;
-margin-top:20px;
-}
-
-.transliteration{
-margin-top:15px;
-font-size:15px;
-line-height:1.8;
-text-align:center;
+font-size:22px;
 font-style:italic;
 color:#666;
+margin-top:0;
 }
 
-details{
-margin-top:12px;
-border:1px solid #d2b98b;
-border-radius:10px;
-padding:12px;
+.verse-list{
+width:90%;
+margin:40px auto;
 }
 
-summary{
-cursor:pointer;
-font-size:16px;
-font-weight:600;
-color:#8b0000;
-}
-
-.word{
-display:inline-block;
-margin:4px;
-padding:6px 10px;
-border:1px solid #d2b98b;
-border-radius:6px;
-cursor:pointer;
-}
-
-.word:hover{
-background:#f3eadc;
-}
-
-.inspector{
-background:#fafafa;
-border:1px solid #d2b98b;
-padding:15px;
-border-radius:10px;
+.verse-item{
+display:block;
+text-decoration:none;
+color:#222;
+background:white;
+border:2px solid #d2b98b;
+border-radius:12px;
+padding:20px;
 margin-bottom:20px;
+transition:0.2s;
 }
 
-.inspector h3{
-margin-top:0;
+.verse-item:hover{
+background:#fcf8f2;
+transform:translateY(-2px);
+}
+
+.verse-number{
+font-size:18px;
+font-weight:bold;
 color:#8b0000;
+margin-bottom:10px;
 }
 
-.row{
-padding:6px 0;
-border-bottom:1px solid #eee;
-font-size:14px;
-}
-
-.mode{
-margin-bottom:15px;
-}
-
-.commentary-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-}
-
-.commentary-box{
-border:1px solid #d2b98b;
-border-radius:10px;
-padding:15px;
-font-size:14px;
-line-height:1.8;
-height:600px;
-overflow:auto;
-background:#fafafa;
-}
-
-.commentary-box h3{
-margin-top:0;
-color:#8b0000;
+.verse-text{
+font-size:20px;
+line-height:1.9;
 }
 
 @media(max-width:900px){
 
-.container{
-grid-template-columns:1fr;
+.header h1{
+font-size:32px;
 }
 
-.commentary-grid{
-grid-template-columns:1fr;
+.chapter-title h2{
+font-size:30px;
 }
 
-.verse{
-font-size:20px;
+.chapter-title p{
+font-size:18px;
+}
+
+.verse-text{
+font-size:17px;
 }
 
 }
 
 </style>
-
-<script>
-
-function showGrammar(word){
-
-const data = {
-
-"रागादि-रोगान्": {
-padam:"रागादि-रोगान्",
-pratipadikam:"रागादि-रोग",
-samasa:"द्वन्द्वसमासः",
-vibhakti:"द्वितीया",
-vacana:"बहुवचनम्",
-linga:"पुल्लिङ्गम्",
-artha:"Passions and diseases"
-},
-
-"जघान":{
-padam:"जघान",
-dhatu:"हन्",
-lakara:"लिट्",
-purusha:"प्रथमपुरुषः",
-vacana:"एकवचनम्",
-artha:"Destroyed"
-},
-
-"अपूर्व-वैद्याय":{
-padam:"अपूर्ववैद्याय",
-pratipadikam:"अपूर्ववैद्य",
-samasa:"कर्मधारयः",
-vibhakti:"चतुर्थी",
-vacana:"एकवचनम्",
-linga:"पुल्लिङ्गम्",
-artha:"To the unparalleled physician"
-}
-
-};
-
-let d=data[word];
-
-if(!d){
-document.getElementById("grammar").innerHTML=
-"<h3>पदविश्लेषणम् (Word Analysis)</h3><p>Grammar data coming soon.</p>";
-return;
-}
-
-let html="<h3>पदविश्लेषणम् (Word Analysis)</h3>";
-
-for(let k in d){
-html+="<div class='row'><b>"+k+"</b> : "+d[k]+"</div>";
-}
-
-document.getElementById("grammar").innerHTML=html;
-
-}
-
-</script>
 
 </head>
 
@@ -247,93 +128,62 @@ document.getElementById("grammar").innerHTML=html;
 <div class="breadcrumb">
 <a href="../../index.html">Home</a> →
 <a href="../index.html">अष्टाङ्गहृदयम्</a> →
-<a href="../sutrasthana.html">सूत्रस्थानम्</a> →
-१. आयुष्कामीयम् →
-श्लोक १
+सूत्रस्थानम्
 </div>
-
-<div class="container">
-
-<div class="left-panel">
 
 <div class="chapter-title">
 <h2>१. आयुष्कामीयम्</h2>
 <p>Āyuṣkāmīyam</p>
 </div>
 
-<div class="verse">
+<div class="verse-list">
+
+<a class="verse-item" href="verse-01.html">
+<div class="verse-number">श्लोक १</div>
+<div class="verse-text">
 रागादिरोगान् सततानुषक्तानशेषकायप्रसृतानशेषान् ।<br>
 औत्सुक्यमोहारतिदान् जघान योऽपूर्ववैद्याय नमोऽस्तु तस्मै ॥१॥
 </div>
+</a>
 
-<div class="transliteration">
-Rāgādirogān satatānuṣaktān aśeṣakāya-prasṛtānaśeṣān ।
-Autsukya-mohāratidān jaghāna yo'pūrvavaidyāya namo'stu tasmai ॥
+<a class="verse-item" href="verse-02.html">
+<div class="verse-number">श्लोक २</div>
+<div class="verse-text">
+आयुःकामायमानेन धर्मार्थसुखसाधनम् ।<br>
+आयुर्वेदोपदेशेषु विधेयः परमादरः ॥२॥
 </div>
+</a>
 
-<details open>
-<summary>छन्दः (Metre Analysis)</summary>
-वृत्तम् : उपजातिः
-</details>
-
-<details open>
-<summary>पदच्छेदः (Word Segmentation)</summary>
-
-<span class="word" onclick="showGrammar('रागादि-रोगान्')">रागादि-रोगान्</span> <span class="word">सततानुषक्तान्</span> <span class="word">अशेषकाय-प्रसृतान्</span> <span class="word">अशेषान्</span> <span class="word">औत्सुक्य-मोहारति-दान्</span> <span class="word" onclick="showGrammar('जघान')">जघान</span> <span class="word">यः</span> <span class="word" onclick="showGrammar('अपूर्व-वैद्याय')">अपूर्व-वैद्याय</span> <span class="word">नमः</span> <span class="word">अस्तु</span> <span class="word">तस्मै</span>
-
-</details>
-
-<details>
-<summary>अन्वयः (Prose Order)</summary>
-
-यः अपूर्ववैद्यः रागादिरोगान् सततानुषक्तान् अशेषकायप्रसृतान् अशेषान् औत्सुक्यमोहारतिदान् जघान, तस्मै नमः अस्तु।
-
-</details>
-
-<details>
-<summary>अर्थः (Meaning)</summary>
-
-Salutations to that unparalleled physician who destroyed the afflictions beginning with attachment, which remain constantly associated with living beings, pervade embodied existence, and give rise to anxiety, delusion, and dissatisfaction.
-
-</details>
-
+<a class="verse-item" href="verse-03.html">
+<div class="verse-number">श्लोक ३</div>
+<div class="verse-text">
+ब्रह्मा स्मृत्वाऽऽयुषो वेदं प्रजापतिमजिग्रहत् ।<br>
+सोऽश्विनौ तौ सहस्राक्षं सोऽत्रिपुत्रादिकान्मुनीन् ॥३॥
 </div>
+</a>
 
-<div class="right-panel">
-
-<div id="grammar" class="inspector">
-
-<h3>पदविश्लेषणम् (Word Analysis)</h3>
-
-<p>Click a word in पदच्छेदः.</p>
-
+<a class="verse-item" href="verse-04.html">
+<div class="verse-number">श्लोक ४</div>
+<div class="verse-text">
+तेऽग्निवेशादिकांस्ते तु पृथक्तन्त्राणि तेनिरे ।<br>
+तेभ्योऽतिविप्रकीर्णेभ्यः प्रायः सारतरोच्चयः ॥४॥
 </div>
+</a>
 
-<div class="mode">
-<input type="radio" checked> सम्पूर्णव्याख्या
-&nbsp;&nbsp;
-<input type="radio"> पदविशेषव्याख्या
+<a class="verse-item" href="verse-05.html">
+<div class="verse-number">श्लोक ५</div>
+<div class="verse-text">
+क्रियतेऽष्टाङ्गहृदयं नातिसंक्षेपविस्तरम् ।<br>
+कायबालग्रहोर्ध्वाङ्गशल्यदंष्ट्राजरावृषान् ॥५॥
 </div>
+</a>
 
-<div class="commentary-grid">
-
-<div class="commentary-box">
-<h3>सर्वाङ्गसुन्दरा</h3>
-
-PASTE SARVĀṄGASUNDARĀ COMMENTARY HERE
-
+<a class="verse-item" href="verse-06.html">
+<div class="verse-number">श्लोक ६</div>
+<div class="verse-text">
+अष्टावङ्गानि तस्याहुश्चिकित्सा येषु संश्रिता ॥६॥
 </div>
-
-<div class="commentary-box">
-<h3>आयुर्वेदरसायनम्</h3>
-
-PASTE HEMĀDRI COMMENTARY HERE
-
-</div>
-
-</div>
-
-</div>
+</a>
 
 </div>
 
