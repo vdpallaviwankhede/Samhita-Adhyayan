@@ -127,6 +127,10 @@ border-radius:10px;
 padding:15px;
 background:#fafafa;
 margin-bottom:20px;
+
+position:sticky;
+top:20px;
+z-index:10;
 }
 
 .inspector h3{
@@ -161,7 +165,18 @@ overflow:auto;
 margin-top:0;
 color:#8b0000;
 }
+.commentary-section{
+width:92%;
+margin:20px auto;
 
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.commentary-section .mode{
+grid-column:1 / span 2;
+}
 .note{
 font-size:13px;
 color:#666;
@@ -393,6 +408,36 @@ Interactive word analysis will be enabled in the next version.
 
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  <div class="commentary-section">
+
 <div class="mode">
 <input type="radio" checked> सम्पूर्णव्याख्या
 &nbsp;&nbsp;
@@ -401,25 +446,12 @@ Interactive word analysis will be enabled in the next version.
 
 <div class="commentary-box">
 <h3>सर्वाङ्गसुन्दरा</h3>
-
-<p>
-Paste Sarvāṅgasundarā commentary here.
-</p>
-
+<p>Paste Sarvāṅgasundarā commentary here.</p>
 </div>
 
 <div class="commentary-box">
 <h3>आयुर्वेदरसायनम्</h3>
-
-<p>
-Paste Āyurveda Rasāyana commentary here.
-</p>
-
+<p>Paste Āyurveda Rasāyana commentary here.</p>
 </div>
 
 </div>
-
-</div>
-
-</body>
-</html>
