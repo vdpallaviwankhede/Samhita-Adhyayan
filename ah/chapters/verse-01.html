@@ -215,10 +215,9 @@ const grammar = {
 `
 };
 
-alert(word);
 
 const box = document.getElementById("grammarData");
-box.innerHTML = "<h2 style='color:red'>TEST</h2>";
+box.innerHTML = grammar[word] || "<p>Grammar data coming soon.</p>";
 
 }
 
